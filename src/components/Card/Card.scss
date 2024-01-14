@@ -1,0 +1,39 @@
+$colorTitleCard: #525C7A;
+$colorDate: #A2ACC7;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .card__image {
+    border-radius: 220px 0px;
+
+    .image {
+      height: 344px;
+      object-fit: cover;
+    }
+  }
+
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .card__title {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      color: $colorTitleCard;
+    }
+
+    .card__date {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px;
+      color: $colorDate;
+    }
+  }
+}

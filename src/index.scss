@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
+$colorBody: #292E3D;
+$colorTitle: #7884A5;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.056px;
+  color: $colorBody;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  transition: 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+}
+
+.materials {
+  overflow: hidden;
+  padding: 128px 32px 98px 32px;
+
+  .materials__text {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    max-width: 859px;
+    padding: 0px 8px;
+
+      h1 {
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 70px;
+        color: $colorTitle;
+      }
+  }
+
+  .slider {
+    margin: 57px -32px 40px 0;
+
+    .cards {
+      display: flex;
+      transition: 0.5s;
+      transform: translateX(0);
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .prev-slide,
+    .next-slide {
+      padding: 12px 0;
+
+      &:hover svg rect {
+        fill: #7884A5;
+      }
+
+      &:hover svg path {
+        stroke: #7884A5;
+      }
+    }
+  }
+}
+
+
